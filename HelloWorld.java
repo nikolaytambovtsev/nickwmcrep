@@ -3,30 +3,37 @@ package ru.geekbrains;
 import javax.swing.*;
 
 public class HelloWorld{
-public static void main(String[] args);
-        int a=2;
-        int b=3;
-        int c=4;
-        int d=5;
-        float x=a*(b+(c/d));
-        System.out.println("x="x);
+public static float calculate(int a,int b,int c,int d){
+        return a*(b+(c/d));
         }
-public static void main(String[] args) {
-    int e = 10;
-    int f = 2;
-    int g = e + f;
-    if (20 =< g >= 10);
-    System.out.println("true");
-else
-    System.out.println("false")
+    final int varOne = 1;
+    final int varTwo = 2;
+    final int varThree =3;
+    final int varFour = 4;
+
+    final float fOne = 1f;
+    final float fTwo = 2f;
+    final float fThree = 3f;
+    final float fFour = 4.0f;
+        System.out.println("calculation from the first task gives us:" + calculate(varOne,varTwo,varThree,varFour));
+private static boolean check (int first,int second){
+    int sum = first+second;
+    return sum<=20 && sum>=10;
 }
-    public static void main(String[] args){
-    int h = 3;
-    if (h>=0);
-System.out.println("положительное число");
-else System.out.println("отрицательное число");
-    }
-    public static void main(String[] args) {
-        String i = "NickW";
-        System.out.print("привет" + i)
-    }
+
+System.out.println("Does the sum of two given numbers fit the range?"+ checkTwoNumbers(1,15));
+    private static boolean isPositive(int veriable){
+    return veriable >=0;}
+    System.out.println("Your name is"+((isPositive(-5))?"positive":"negative")+"!");
+    private static String welcome (String name) {
+        System.out.println("привет, указанное имя");
+        System.out.println("Just kidding!");
+        return "Привет,"+name+"!";
+}
+System.out.println(welcome("Nikolay"));
+
+//не понимаю почему не работает//
+
+
+
+
